@@ -2,10 +2,10 @@ import streamlit as st
 import datetime
 
 # Title of the application
-st.title("Mental Health and Well-being App")
+st.title("Mental Health App")
 
 # Introduction
-st.write("Welcome to the Mental Health and Well-being App! This app helps you with mindfulness exercises, tracks your mood, and provides helpful resources.")
+st.write("Welcome to the Mental Health App! This app helps you with mindfulness exercises, tracks your mood, and provides helpful resources.")
 
 # Mindfulness exercises
 st.header("Mindfulness Exercises")
@@ -22,8 +22,8 @@ for exercise in exercises:
     st.write(exercise)
 
 # Mood tracking
-st.header("Mood Tracking")
-st.write("Track how you are feeling today:")
+st. sidebar.header("Mood Tracking")
+st. sidebar.write("Track how you are feeling today:")
 
 mood = st.selectbox("How are you feeling today?", ["Happy", "Sad", "Angry", "Anxious", "Relaxed", "Excited"])
 
