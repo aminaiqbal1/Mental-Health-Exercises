@@ -71,10 +71,10 @@ elif mood == "Excited":
 
 # Ending note
 st.write("Remember, it's important to take care of your mental health. If you need more help, don't hesitate to reach out to a trusted adult or mental health professional.")
+# Feedback section
+st.sidebar.header('Feedback')
+st.sidebar.subheader('We would love to hear your thoughts:')
+feedback = st.sidebar.text_area('Please provide your feedback here')
+if st.sidebar.button('Submit Feedback'):
+    st.sidebar.success('Thank you for your feedback!')
 
-    # Feedback section
-    st.sidebar.header('Feedback')
-    st.sidebar.subheader('We would love to hear your thoughts:')
-    feedback = st.sidebar.text_area('Please provide your feedback here')
-    if st.sidebar.button('Submit Feedback'):
-        st.sidebar.success('Thank you for your feedback!')
