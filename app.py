@@ -25,7 +25,7 @@ for exercise in exercises:
 st. sidebar.header("Mood Tracking")
 st. sidebar.write("Track how you are feeling today:")
 
-mood = st.selectbox("How are you feeling today?", ["Happy", "Sad", "Angry", "Anxious", "Relaxed", "Excited"])
+mood = st. sidebar.selectbox("How are you feeling today?", ["Happy", "Sad", "Angry", "Anxious", "Relaxed", "Excited"])
 
 # Save the mood to a list (In a real application, you would save this to a database)
 mood_list = []
